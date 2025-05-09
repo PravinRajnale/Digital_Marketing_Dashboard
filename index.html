@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power BI Embed (Masked Logo)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Mask the logo (bottom right) */
+    .logo-mask {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 160px;
+      height: 45px;
+      background: white;
+      opacity: 0.95;
+      z-index: 10;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-wrapper">
+    <iframe 
+      title="Digital Marketing Report"
+      src="https://app.powerbi.com/reportEmbed?reportId=51144c35-e434-406a-a4b7-f0ca52e54e7c&autoAuth=true&ctid=36da45f1-dd2c-4d1f-af13-5abe46b99921&filterPaneEnabled=false&navContentPaneEnabled=false"
+      allowfullscreen>
+    </iframe>
+    <div class="logo-mask"></div>
+  </div>
+</body>
+</html>

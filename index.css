@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background: #f4f4f4;
+  }
+  
+  .report-container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #pbiFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
